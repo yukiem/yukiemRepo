@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>パスワード変更</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+    </head>
+
+    <body>
+<!--ヘッダー!-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+            <div class="navbar-collapse justify-content-end" id="Navber">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-light" href="main.php">メイン <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item  active pl-4">
+                        <a class="nav-link text-light" href="logout.php">ログアウト</a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+<!--ここまで!-->
+
+        <div class="py-4"></div>
+        <p class="h2 text-center ">ファイル共有システム</p>
+
+        <div class="py-2"></div>
+        <p class="h3 text-center ">パスワード変更</p>
+        <div class="py-2"></div>
+            <form action="passChange.php" method="post">
+                <div class="container">
+                    <div class="form-group row h5">
+                        <badge class="col-sm-2 col-form-label text-right">名前</badge>
+                        <div class="col-md-8">
+                            <h4>{$loginName}</h4>
+                            <h5 class="text-danger">{$error_msg}</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="form-group row h5">
+                        <label for="password" class="col-sm-2 col-form-label text-right">新パスワード</label>
+                        <div class="col-md-8">
+                            <input type="password" class="form-control" id="password3" name="password3" placeholder="半角英数10字以上15字まで">
+                            <h5 class="text-danger">{$error_msg3}</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="form-group row h5">
+                        <label for="password" class="col-sm-2 col-form-label text-right">新パスワード</label>
+                        <div class="col-md-8">
+                            <input type="password" class="form-control" id="password4" name="password4" placeholder="もう一度入力してください">
+                            <h5 class="text-danger">{$error_msg4}</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-2"></div>
+                <div class="text-center" >
+                    <h5 class="text-danger">{$error_msg5}{$error_msg6}<h5>
+                </div>
+                <div class="py-1"></div>
+                <div class="text-center" >
+                    <button type="submit" id="passChange" name="passChange" class="btn btn-primary btn-lg">変更</button>
+                </div>
+            </form>
+    </body>
+</html>
