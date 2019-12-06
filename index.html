@@ -18,7 +18,7 @@
                 $this.value = str;
             }
         </script>
-       
+
     </head>
 
     <body>
@@ -27,15 +27,16 @@
         <div class="py-4"></div>
 
 
-        <form action="index.php" method="post">
+        <form action="index.html" method="post">
     <!-- ユーザー名 !-->
             <div class="container">
                 <div class="form-group row h5">
-                    <label for="email" class="col-sm-2 col-form-label col text-right">名前</label>
+                    <label class="col-sm-2 col-form-label col text-right">名前</label>
                     <div class="col-md-8">
-                        <input type="text" class="form-control" id="name" name="name" value="{$entName}"
-                        onInput="checkForm(this)" placeholder="半角英数10字まで">
-                        <h5 class="text-danger">{$error_msg}</h5>
+                        <input type="text" class="form-control" id="name" name="name"
+                        value="" onInput="checkForm(this)" placeholder="半角英数10字まで">
+                        <h5 class="text-danger">
+                        </h5>
                     </div>
                 </div>
     <!-- パスワード !-->
@@ -43,7 +44,7 @@
                     <label for="password" class="col-sm-2 col-form-label col text-right">パスワード</label>
                     <div class="col-md-8">
                         <input type="password" class="form-control" id="password" name="password" placeholder="半角英数10字以上15字まで">
-                        <h5 class="text-danger">{$error_msg2}</h5>
+                        <h5 class="text-danger"></h5>
                     </div>
                 </div>
             </div>
@@ -51,14 +52,14 @@
             <div class="py-2"></div>
     <!-- ログイン・新規登録ボタン !-->
             <div class="text-center">
-                <h5 class="text-danger">{$error_msg3}<h5>
+                <h5 class="text-danger"><h5>
                 <div class="py-1"></div>
                 <div class="container  row justify-content-md-center mx-auto">
                     <div class="ml-5 pr-5">
-                        <button type="submit" class="btn btn-primary btn-lg">ログイン</button>
+                        <a href="main.html" class="btn btn-primary btn-lg">ログイン</a>
                     </div>
                     <div class="pr-5">
-                        <a href="newUser.php" class="btn btn-success btn-lg">新規登録</a>
+                        <a href="newUser.html" class="btn btn-success btn-lg">新規登録</a>
                     </div>
                 </div>
             </div>
