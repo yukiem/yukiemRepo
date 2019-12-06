@@ -16,13 +16,13 @@
             <div class="navbar-collapse justify-content-end" id="Navber">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link text-light" href="main.php">メイン <span class="sr-only"></span></a>
+                        <a class="nav-link text-light" href="main.html">メイン <span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item  active pl-4">
-                        <a class="nav-link text-light" href="logout.php">ログアウト</a>
+                        <a class="nav-link text-light" href="index.html">ログアウト</a>
                     </li>
                 </ul>
-            </div><!-- /.navbar-collapse -->
+            </div>
         </nav>
 <!--ここまで!-->
 
@@ -32,13 +32,13 @@
         <div class="py-2"></div>
         <p class="h3 text-center ">パスワード変更</p>
         <div class="py-2"></div>
-            <form action="passChange.php" method="post">
+            <form action="index.html" method="post">
                 <div class="container">
                     <div class="form-group row h5">
                         <badge class="col-sm-2 col-form-label text-right">名前</badge>
                         <div class="col-md-8">
-                            <h4>{$loginName}</h4>
-                            <h5 class="text-danger">{$error_msg}</h5>
+                            <h4>user</h4>
+                            <h5 class="text-danger"><!--{$error_msg}!--></h5>
                         </div>
                     </div>
                 </div>
@@ -48,7 +48,7 @@
                         <label for="password" class="col-sm-2 col-form-label text-right">新パスワード</label>
                         <div class="col-md-8">
                             <input type="password" class="form-control" id="password3" name="password3" placeholder="半角英数10字以上15字まで">
-                            <h5 class="text-danger">{$error_msg3}</h5>
+                            <h5 class="text-danger"><!--{$error_msg3}!--></h5>
                         </div>
                     </div>
                 </div>
@@ -57,13 +57,13 @@
                         <label for="password" class="col-sm-2 col-form-label text-right">新パスワード</label>
                         <div class="col-md-8">
                             <input type="password" class="form-control" id="password4" name="password4" placeholder="もう一度入力してください">
-                            <h5 class="text-danger">{$error_msg4}</h5>
+                            <h5 class="text-danger"><!--{$error_msg4}!--></h5>
                         </div>
                     </div>
                 </div>
                 <div class="py-2"></div>
                 <div class="text-center" >
-                    <h5 class="text-danger">{$error_msg5}{$error_msg6}<h5>
+                    <h5 class="text-danger"><!--{$error_msg5}{$error_msg6}!--><h5>
                 </div>
                 <div class="py-1"></div>
                 <div class="text-center" >
