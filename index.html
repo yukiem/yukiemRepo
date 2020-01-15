@@ -17,10 +17,18 @@
                 }
                 $this.value = str;
             }
+         //文字数カウント
+            let form-control = document.querySelector('.form-control'); 
+            let stringNum = document. querySelector('.stringNum');
+            text.addEventListener('keyup', onKeyUp);
+            function onKeyUp(){
+                const inputText = form-control.value;
+                stringNum.innerText = inputText.length;
+            }
         </script>
 
     </head>
-
+    
     <body>
         <div class="py-4"></div>
         <p class="h2 text-center ">ファイル共有システム</p>
@@ -35,8 +43,7 @@
                     <div class="col-md-8">
                         <input type="text" class="form-control" id="name" name="name"
                         value="" onInput="checkForm(this)" placeholder="半角英数10字まで">
-                        <h5 class="text-danger">
-                        </h5>
+                        <h5 class="text-danger"><span class = "stringNum">0</span>です</h5>
                     </div>
                 </div>
     <!-- パスワード !-->
